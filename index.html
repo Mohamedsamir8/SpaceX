@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceX</title>
+    <link rel="shortcut icon" href="space.png" type="image/x-icon" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        backdrop-filter: blur(10px);
+      }
+
+      header {
+        background-color: transparent;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 27px #3adaff;
+        backdrop-filter: blur(100px);
+      }
+      h1{
+        letter-spacing: 5px;
+        font-family:  "Jersey 25", sans-serif;
+        font-size: 40px;
+      }
+      .container {  
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        overflow: hidden;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+      }
+
+      .gallery-item {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #fefffa;
+        border: 1px solid #fff;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.6s;
+        transform: rotate(360deg);
+      }
+      .gallery-item img:hover{
+        transform: rotate(0deg);
+      }
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SpaceX</h1>
+    </header>
+    <div class="container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1654263391025-4c4809a37f5c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
+            alt="Image 1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1653089116335-137ea51598a9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+            alt="Image 2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1658457459792-f4dfe37407ca?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
+            alt="Image 3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1659835547789-cb00dbd213c4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+            alt="Image 4"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1662943523548-373718f22124?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
+            alt="Image 4"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1673586410488-b694d350756e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"
+            alt="Image 5"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D"
+            alt="Image 6"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1654737178110-977669b9bcdc?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Image 7"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1655509206649-a63396bed840?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
+            alt="Image 8"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1658279165324-454de0ee3da6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D"
+            alt="Image 9"
+          />
+        </div>
+          <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1654263391025-4c4809a37f5c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
+            alt="Image 10"
+          />
+          </div>
+          <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+            alt="Image 11"
+          />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
